@@ -12,6 +12,5 @@ namespace Knowit
       ulong missing = (((ulong) 100000 * (100000 + 1))/2) - misRange;
       Console.WriteLine($"Luke 1:\t{missing}");
     }
-    }
   }
 }
