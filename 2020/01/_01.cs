@@ -5,19 +5,13 @@ namespace Knowit
 {
   public static class _01
   {
-    private static int[] _Input = Array.ConvertAll(FileHelper.GetInput("01/input").Split(","), int.Parse);
+    private static ulong[] _Input = Array.ConvertAll(FileHelper.GetInput("01/input").Split(","), ulong.Parse);
     public static void Run()
     {
-      ulong range = Enumerable.Range(1, 100000)
-        .Select(i => (ulong)i)
-        .Aggregate((a, b) => a + b);
-
-      ulong misRange = _Input
-        .Select(i => (ulong)i)
-        .Aggregate((a, b) => a + b);
-
-      ulong missing = range - misRange;
+      ulong misRange = _Input.Aggregate((a, b) => a + b);
+      ulong missing = (((ulong) 100000 * (100000 + 1))/2) - misRange;
       Console.WriteLine($"Luke 1:\t{missing}");
+    }
     }
   }
 }
