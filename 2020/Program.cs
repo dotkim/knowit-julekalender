@@ -11,6 +11,7 @@ namespace Knowit
       //Benchmark.Method(_03.Run);
       Benchmark.Method(_04.Run);
       Benchmark.Method(_05.Run);
+      Benchmark.Method(_06.Run);
     }
   }
 }
