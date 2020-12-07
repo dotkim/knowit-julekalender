@@ -7,7 +7,7 @@ namespace Knowit
 {
   public static class _04
   {
-    private static string[] _Input = Regex.Split(FileHelper.GetInput(@"04\input"), @",\s|\r\n");
+    private static string[] _Input = Regex.Split(FileHelper.GetInput(@"04/input"), @",\s|(?:\r\n|\n)");
 
     public static void Run()
     {

@@ -7,7 +7,7 @@ namespace Knowit
 {
   public static class _05
   {
-    private static string _Input = FileHelper.GetInput(@"05\input");
+    private static string _Input = FileHelper.GetInput(@"05/input");
 
     public static void Run()
     {

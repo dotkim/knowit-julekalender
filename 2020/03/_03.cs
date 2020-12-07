@@ -5,11 +5,11 @@ namespace Knowit
 {
   public static class _03
   {
-    private static string[] _Input = FileHelper.GetInput(@"03\input").Split("\r\n");
+    private static string[] _Input = FileHelper.GetInput(@"03/input").Split("\r\n");
     private static int _ColLen = _Input[0].Length;
     private static int _RowLen = _Input.Length;
 
-    private static string[] _Words = FileHelper.GetInput(@"03\words").Split("\r\n");
+    private static string[] _Words = FileHelper.GetInput(@"03/words").Split("\r\n");
 
     private static int[] _Xdir = { -1, -1, 0, +1, +1, +1, 0, -1 };
     private static int[] _Ydir = { 0, -1, -1, -1, 0, +1, +1, +1 };
